@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { API_URL, API_KEY } from '../../config';
+import { API_URL } from '../../config';
 import Navigation from '../elements/Navigation/Navigation.component';
 import MovieInfo from '../elements/MovieInfo/MovieInfo.component';
-import MovieInfoBar from '../elements/MovieInfoBar/MovieInfoBar.component';
-import FourColGrid from '../elements/FourColGrid/FourColGrid.component';
-import Actor from '../elements/Actor/Actor.component';
 import Spinner from '../elements/Spinner/Spinner.component';
 import './Movie.styles.css';
 

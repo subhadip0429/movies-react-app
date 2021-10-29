@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../../config';
-import HeroImage from '../elements/HeroImage/HeroImage.component';
+import { API_URL } from '../../config';
 import SearchBar from '../elements/SearchBar/SearchBar.component';
 import FourColGrid from '../elements/FourColGrid/FourColGrid.component';
 import MovieThumb from '../elements/MovieThumb/MovieThumb.component';
@@ -8,7 +7,6 @@ import LoadMoreBtn from '../elements/LoadMoreBtn/LoadMoreBtn.component';
 import Spinner from '../elements/Spinner/Spinner.component';
 import './Home.styles.css';
 import FilterBarComponent from "../elements/FilterBar/FilterBar.component";
-import {Redirect} from "react-router-dom";
 
 class Home extends Component {
   state = {

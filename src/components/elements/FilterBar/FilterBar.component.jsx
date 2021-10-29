@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../../../config';
+import { API_URL } from '../../../config';
 import PropTypes from 'prop-types';
 import './FilterBar.styles.css';
 import Select from 'react-select'

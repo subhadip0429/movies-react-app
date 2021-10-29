@@ -55,7 +55,6 @@ export default class MovieActionComponent extends React.Component{
         fetch(`${API_URL}movies/genre`)
             .then(result => result.json())
             .then(result => {
-                let options = result.data.map(({name}) => ({value: name, label: name.replace(/(?:^|\s|["'([{])+\S/g, match => match.toUpperCase())}))
                 this.setState({genre_options: result.data})
             })
     }
