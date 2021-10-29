@@ -155,10 +155,10 @@ export default class MovieActionComponent extends React.Component{
                     <div className="login-box dark-mode">
                         <h1 className="dark-mode">{this.props.history.location.action === "add" ? "Add Movie" : "Update Movie"}</h1>
                         <form onSubmit={this.onSubmit}>
-                            <input type="text" placeholder="Name" value={this.state.name} disabled={this.props.history.location.action !== "add"} onChange={e => this.setState({name: e.target.value})} className="dark-mode"/>
-                            <input type="text" placeholder="Directors" value={this.state.director} onChange={e => this.setState({director: e.target.value})} className="dark-mode"/>
-                            <input type="text" placeholder="99Popularity" value={this.state.popularity} onChange={e => this.setState({popularity: e.target.value})} className="dark-mode"/>
-                            <input type="text" placeholder="IMDB Score" value={this.state.imdb_score} onChange={e => this.setState({imdb_score: e.target.value})} className="dark-mode"/>
+                            <input type="text" placeholder="Name" value={this.state.name} disabled={this.props.history.location.action !== "add"} onChange={e => this.setState({name: e.target.value})} className="dark-mode" required={}/>
+                            <input type="text" placeholder="Directors" value={this.state.director} onChange={e => this.setState({director: e.target.value})} className="dark-mode" required={}/>
+                            <input type="text" placeholder="99Popularity" value={this.state.popularity} onChange={e => this.setState({popularity: e.target.value})} className="dark-mode" required/>
+                            <input type="text" placeholder="IMDB Score" value={this.state.imdb_score} onChange={e => this.setState({imdb_score: e.target.value})} className="dark-mode" required />
                             <div className="chip-board">
                                 {this.state.genre.map(name => <GenreChipComponent key={name} name={name} onClose={this.onClose} />)}
                                 <GenreChipComponent key={"add-new"} name={"+ add new"} onClose={this.onAddNew} classes={"add-new"} />
