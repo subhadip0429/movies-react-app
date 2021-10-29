@@ -1,0 +1,27 @@
+
+
+.background-grey{
+    background: #dddddd;
+    color: #616161;
+}
+
+.basic-chip{
+    padding: 5px 10px;
+    border-radius: 50px;
+    display: inline-flex;
+    margin: 5px;
+}
+.basic-chip a {
+    color: black;
+    text-underline: none;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.add-new{
+    background: cornflowerblue;
+    color: white;
+}
+.add-new a{
+    display: none;
+}

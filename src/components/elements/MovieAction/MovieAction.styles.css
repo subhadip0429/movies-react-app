@@ -1,0 +1,16 @@
+.form-control{
+    width: 80%;
+    padding: 0 0;
+    margin: 10px 20px;
+}
+
+.chip-board{
+    min-height: 25vh;
+    min-width: 80%;
+    max-width: 80%;
+    /*border: white solid 2px;*/
+    border-radius: 15px;
+    background: #424242;
+    margin-bottom: 15px;
+    overflow-y: auto;
+}
