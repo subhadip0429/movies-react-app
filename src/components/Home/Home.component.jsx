@@ -74,6 +74,22 @@ class Home extends Component {
     .catch(error => console.error('Error:', error))
   }
 
+  deleteItem = (id) => {
+    console.log("deleting id", id)
+    const token = localStorage.getItem("_token");
+    fetch(`${API_URL}movies/${id}`,{
+      method: "DELETE",
+      headers: {
+        'Authorization': `Bearer ${token}`,
+      }
+    })
+        // .then(response => response.json())
+        .then(() => {
+          this.setState({loading : true});
+          this.fetchItems()
+        });
+  }
+
   render() {
     const { movies, loading, currentPage, totalPages, searchTerm } = this.state;
     return (
@@ -91,6 +107,7 @@ class Home extends Component {
                   image={'./images/no_image.jpg'}
                   movieId={element._id}
                   movieName={element.name}
+                  deleteItemHandler={this.deleteItem}
                   authenticated={this.props.currentUser != null}
                 />
               ))}

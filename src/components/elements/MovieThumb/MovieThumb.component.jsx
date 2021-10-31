@@ -16,10 +16,10 @@ const MovieThumb = ({ image, movieId, movieName, authenticated, deleteItemHandle
         <Link to={{pathname: "/movie-action/"+movieId, action: "edit", movieId}}>
           <button className="btn btn-outline-warning">Edit</button>
         </Link>
-          {/*<button className="btn btn-outline-danger" onClick={e => deleteItemHandler(movieId)}>Delete</button>*/}
-          <Link to={{pathname: "/movie-action/"+movieId, action: "delete", movieId}}>
-          <button className="btn btn-outline-danger" >Delete</button>
-        </Link>
+          <button className="btn btn-outline-danger" onClick={e => deleteItemHandler(movieId)}>Delete</button>
+        {/*  <Link to={{pathname: "/movie-action/"+movieId, action: "delete", movieId}}>*/}
+        {/*  <button className="btn btn-outline-danger" >Delete</button>*/}
+        {/*</Link>*/}
       </div>}
     </div>
   </div>
